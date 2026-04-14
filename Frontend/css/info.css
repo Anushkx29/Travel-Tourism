@@ -1,0 +1,128 @@
+/* ── Privacy Policy Page Styles ── */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  background: url("../images/BG\ \(2\).jpg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+/* WRAPPER */
+.privacy-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* CARD */
+.privacy-card {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh; /* fit inside screen */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* LEFT CONTENT */
+.privacy-main {
+  flex: 1.2;
+  padding: 25px;
+  overflow: hidden; /* 🚫 no scroll */
+}
+
+/* TITLE */
+.privacy-main h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+/* META */
+.privacy-meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* BODY TEXT */
+.privacy-body {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* HEADINGS */
+.privacy-body h2 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  color: #222;
+}
+
+/* PARAGRAPHS */
+.privacy-body p {
+  margin-bottom: 8px;
+}
+
+/* LISTS */
+.privacy-body ul {
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+
+.privacy-body li {
+  margin-bottom: 5px;
+}
+
+/* INTRO */
+.privacy-intro {
+  margin-bottom: 10px;
+}
+
+/* RIGHT IMAGE */
+.privacy-image {
+  flex: 1;
+  background: #f9fbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* BIGGER IMAGE */
+.privacy-image img {
+  width: 100%;
+  max-width: 450px; /* 🔥 bigger */
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    overflow: auto; /* allow scroll on small screens */
+  }
+
+  .privacy-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .privacy-main {
+    overflow: visible;
+  }
+
+  .privacy-image img {
+    max-width: 250px;
+  }
+}
+
